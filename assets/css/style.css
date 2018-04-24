@@ -1,0 +1,82 @@
+body{
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlYaO_UYhl1QNcUJJz4SmwmQ4pKtd0TUsOnadZpN2VvyjDvnDoYg);
+}
+
+.jumbotron{
+    background: url(https://media.istockphoto.com/photos/burning-fire-flame-on-black-background-picture-id477494366?k=6&m=477494366&s=612x612&w=0&h=Aeg49XXh4t5P5xJzdwGl2SZZeZj3VIbLq3syp38MPxg=);
+    color: red;
+    
+    
+}
+    
+
+.main-content{
+    font-family: 'Gugi', cursive;
+    background: url(https://previews.123rf.com/images/kozini/kozini1404/kozini140400007/27511429-light-gray-background-with-diagonal-striped-pattern.jpg);
+    font-size: 36px;
+    margin: 0 40px;
+}
+
+
+#select{
+    font-size: 36px;
+
+    text-align:center;
+}
+
+#defeat{
+    font-size: 40px;
+    color: red;
+    text-align:center;
+}
+
+#luffy,
+#ace,
+#zoro,
+#marco {
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+#luffy:hover{ 
+    background : yellow;
+    
+    
+}
+
+#ace:hover{
+    background: red;
+    
+}
+
+#zoro:hover{
+    background: green;
+}
+
+#marco:hover{
+    background: blue;
+}
+
+#defenderarea {
+    text-align: center;
+    
+}
+
+#attack,
+#reset{
+    width: 200px;
+    background: white;
+
+}
+
+#attack:hover{
+    background: red;
+    color: white;
+}
+
+#reset:hover{
+    background: blue;
+    color: white;
+}
+
