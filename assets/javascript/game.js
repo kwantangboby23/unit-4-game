@@ -27,10 +27,10 @@ function reset(){
       num3= Math.floor(Math.random()*11+1);
       num4= Math.floor(Math.random()*11+1);
       total= 0;
-      $('#totalScore').text(usertotal);
+      $('#totalScore').text(total);
       } 
 
-function win(){
+function winner(){
 alert("You got it!");
   win++; 
   $('#win').text(win);
@@ -49,8 +49,8 @@ alert ("Nah.. You Failed.....");
     console.log("total= " + total);
     $('#totalScore').text(total); 
           
-        if (total == randomNum){
-          win();
+        if (total === randomNum){
+          winner();
         }
         else if ( total > randomNum){
           lose();
@@ -60,8 +60,8 @@ alert ("Nah.. You Failed.....");
     total = total + num2;
     console.log("Total = " + total);
     $('#totalScore').text(total); 
-        if (total == randomNum){
-          win();
+        if (total === randomNum){
+          winner();
         }
         else if ( total > randomNum){
           lose();
@@ -72,8 +72,8 @@ alert ("Nah.. You Failed.....");
     console.log("Total = " + total);
     $('#totalScore').text(total);
 
-          if (total == randomNum){
-          win();
+          if (total === randomNum){
+          winner();
         }
         else if ( total > randomNum){
           lose();
@@ -84,8 +84,8 @@ alert ("Nah.. You Failed.....");
     console.log("Total = " + total);
     $('#totalScore').text(total); 
       
-          if (total == randomNum){
-          win();
+          if (total === randomNum){
+          winner();
         }
         else if ( total > randomNum){
           lose();
