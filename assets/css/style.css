@@ -1,82 +1,73 @@
-body{
-    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlYaO_UYhl1QNcUJJz4SmwmQ4pKtd0TUsOnadZpN2VvyjDvnDoYg);
+body {
+	background: url(https://www.desicomments.com/dc1/04/92623/92623.jpg);
+	text-align : center;
+	color: white;
+	margin: 50px;
+	font-size: 30px;
+	line-height: 50px;
 }
 
-.jumbotron{
-    background: url(https://media.istockphoto.com/photos/burning-fire-flame-on-black-background-picture-id477494366?k=6&m=477494366&s=612x612&w=0&h=Aeg49XXh4t5P5xJzdwGl2SZZeZj3VIbLq3syp38MPxg=);
-    color: red;
-    
-    
-}
-    
-
-.main-content{
-    font-family: 'Gugi', cursive;
-    background: url(https://previews.123rf.com/images/kozini/kozini1404/kozini140400007/27511429-light-gray-background-with-diagonal-striped-pattern.jpg);
-    font-size: 36px;
-    margin: 0 40px;
+.header {
+	background: white;
+	color: black;
+	font-family: 'Gugi', cursive;
 }
 
-
-#select{
-    font-size: 36px;
-
-    text-align:center;
+.header:hover{
+	background: blue;
+	color: white;
 }
 
-#defeat{
-    font-size: 40px;
-    color: red;
-    text-align:center;
+.main-content {
+	background: url(https://images.pexels.com/photos/675977/blue-sky-merge-clouds-675977.jpeg?cs=srgb&dl=light-sky-clouds-675977.jpg&fm=jpg);
+	color: black;
+	text-align: left;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 20px;
 }
 
-#luffy,
-#ace,
-#zoro,
-#marco {
-    text-align: center;
-    margin: 0 auto;
-    
+#inst {
+	font-weight: bold;
+	font-family: 'Gugi', cursive;
+	font-size: 25px;
 }
 
-#luffy:hover{ 
-    background : yellow;
-    
-    
+.numberToMatch{
+	font-size: 20px;
+	background: green;
+	font: white;
+	width: 50%;
+	font-family: 'Gugi', cursive; 
+	float:left;
 }
 
-#ace:hover{
-    background: red;
-    
+#randomNumber {
+	font-weight: bold;
+	font-size: 20px;
+	color: black;
+	
 }
 
-#zoro:hover{
-    background: green;
+.score{ 
+	width: 50%;
+	float:left;
+	font-size: 20px;
+	font-family: 'Gugi', cursive; 
+	background: blue;
 }
 
-#marco:hover{
-    background: blue;
+.winsAndLosses{
+	font-size: 25px;
+	background:black;
+	color: white;
 }
 
-#defenderarea {
-    text-align: center;
-    
+.crystals{
+	background: pink;
 }
 
-#attack,
-#reset{
-    width: 200px;
-    background: white;
-
+.image{
+	width: 150px;
+	height: 150px;
 }
-
-#attack:hover{
-    background: red;
-    color: white;
-}
-
-#reset:hover{
-    background: blue;
-    color: white;
-}
-

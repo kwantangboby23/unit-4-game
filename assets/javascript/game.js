@@ -1,80 +1,94 @@
+$( document ).ready(function(){
+  //Random number generated should be between 19 * 120
+  var randomNum=Math.floor(Math.random()*101+19)
+  
+  
+  $('#randomNumber').text(randomNum);
+  // each variable will be created number between 1 - 12
+  var num1= Math.floor(Math.random()*11+1)
+  var num2= Math.floor(Math.random()*11+1)
+  var num3= Math.floor(Math.random()*11+1)
+  var num4= Math.floor(Math.random()*11+1)
+  
+  
+  var total= 0; 
+  var win= 0;
+  var loss = 0;
+  
+$('#win').text(win);
+$('#loss').text(loss);
+//reset function
+function reset(){
+      randomNum=Math.floor(Math.random()*101+19);
+      console.log(randomNum)
+      $('#randomNumber').text(randomNum);
+      num1= Math.floor(Math.random()*11+1);
+      num2= Math.floor(Math.random()*11+1);
+      num3= Math.floor(Math.random()*11+1);
+      num4= Math.floor(Math.random()*11+1);
+      total= 0;
+      $('#totalScore').text(usertotal);
+      } 
 
+function win(){
+alert("You got it!");
+  win++; 
+  $('#win').text(win);
+  reset();
+}
 
+function lose(){
+alert ("Nah.. You Failed.....");
+  loss++;
+  $('#loss').text(loss);
+  reset()
+}
 
-//
-
-$(document).ready(function () {
-
-
-    // Global Variable
-
-    var characterChosen = false;
-    var enemyChosen = false;
-    var visiblehero;
-    var enemy = {};
-    var enemykilled = 0;
-    var isDefender = true;
-    var isEnemy = true;
-    var defeated = false;
-
-    var name; 
-    var hp;
-    var atkPower;
-    var couneterAtk;
-
-
-
-
-    // setup Character value //
-
-    function setupChar(x) {
-        
-        if (x == "luffy") {
-            name= "luffy";
-            console.log("11")
-            hp: 100;
-            atkPower: 25 + Math.floor(Math.random() * 30);
-            counterAtk: 25;
+  $('#blue').on ('click', function(){
+    total = total + num1;
+    console.log("New total= " + total);
+    $('#totalScore').text(total); 
+          //sets win/lose conditions
+        if (total == randomNum){
+          win();
         }
-        else if (x == "ace") {
-            name: "ace"
-            hp: 125
-            atkPower: 10 + Math.floor(Math.random() * 50)
-            counterAtk: Math.floor(Math.random() * 50)
+        else if ( total > randomNum){
+          lose();
+        }   
+  })  
+  $('#red').on ('click', function(){
+    total = total + num2;
+    console.log("New total= " + total);
+    $('#totalScore').text(total); 
+        if (total == randomNum){
+          win();
         }
-        else if (x == "zoro") {
-            name: "zoro"
-            hp: 150
-            atKPower: 40
-            couneterAtk: 20 + Math.floor(Math.random() * 10)
+        else if ( total > randomNum){
+          lose();
+        } 
+  })  
+  $('#green').on ('click', function(){
+    total = total + num3;
+    console.log("New total= " + total);
+    $('#totalScore').text(total);
+//sets win/lose conditions
+          if (total == randomNum){
+          win();
         }
-        else if (x == "marco") {
-            name: "marco"
-            hp: 200
-            atKPower: 20
-            counterAtk: 20
+        else if ( total > randomNum){
+          lose();
+        } 
+  })  
+  $('#yellow').on ('click', function(){
+    total = total + num4;
+    console.log("New total= " + total);
+    $('#totalScore').text(total); 
+      
+          if (total == randomNum){
+          win();
         }
-    }
-
-
-    $(".main-container").on("click", ".character", function () {
-
-
-        if (isDefender == false && isEnemy == false) {
-            return false;
+        else if ( total > randomNum){
+          lose();
         }
-        if (isDefender == true) {
-            visiblehero = $(this).attr("id")
-            console.log(visiblehero);
-            window.alert("You choose " + visiblehero);
-            setupChar(visiblehero);
-            console.log(setupChar(visiblehero));
-            $("#luffy").hide();
-            $("#select").hide();
-            document.getElementById("defeat").innerHTML = "Defeat All Enemies!!!";
-            $("#character").appendTo("#defenderarea");
-        }
-
-    });
-
-});
+  });   
+}); 
