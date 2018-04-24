@@ -43,12 +43,12 @@ alert ("Nah.. You Failed.....");
   $('#loss').text(loss);
   reset()
 }
-
+// run it
   $('#blue').on ('click', function(){
     total = total + num1;
-    console.log("New total= " + total);
+    console.log("total= " + total);
     $('#totalScore').text(total); 
-          //sets win/lose conditions
+          
         if (total == randomNum){
           win();
         }
@@ -58,7 +58,7 @@ alert ("Nah.. You Failed.....");
   })  
   $('#red').on ('click', function(){
     total = total + num2;
-    console.log("New total= " + total);
+    console.log("Total = " + total);
     $('#totalScore').text(total); 
         if (total == randomNum){
           win();
@@ -69,9 +69,9 @@ alert ("Nah.. You Failed.....");
   })  
   $('#green').on ('click', function(){
     total = total + num3;
-    console.log("New total= " + total);
+    console.log("Total = " + total);
     $('#totalScore').text(total);
-//sets win/lose conditions
+
           if (total == randomNum){
           win();
         }
@@ -81,7 +81,7 @@ alert ("Nah.. You Failed.....");
   })  
   $('#yellow').on ('click', function(){
     total = total + num4;
-    console.log("New total= " + total);
+    console.log("Total = " + total);
     $('#totalScore').text(total); 
       
           if (total == randomNum){
